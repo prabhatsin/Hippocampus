@@ -1,0 +1,15 @@
+# Virtual environment
+myenv/
+.venv/
+venv/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local database / vector storage
+qdrant_db/
