@@ -1,0 +1,33 @@
+
+PROBLEM1: 
+
+TODO: Serialize memory saves with a single worker queue
+
+Problem
+save_turn starts a new thread for every turn. Fast back-to-back turns (normal in a voice call) cause overlapping saves, which can lead to:
+
+=>Duplicate or conflicting memories. Each save reads the same old state, then writes.
+=>Lock or corruption risk on local Qdrant, which isn’t built for parallel writers.
+=>Out-of-order updates. “I’m not vegetarian anymore” could be saved before the older “I’m vegetarian”.
+=>Lost saves on exit, since we only guess with sleep(20).
+
+Solution
+Use one background worker thread plus a queue.
+
+1.save_turn only puts (user_id, user_msg, assistant_msg) into a queue.Queue and returns instantly.
+2.One daemon worker thread loops forever, takes one item at a time, and calls m.add(...). Saves 
+run in order, never in parallel.
+
+3.Wrap each save in try/except, so one failed save doesn’t kill the worker.
+4.Add a flush() function that calls queue.join(), and call it before the program exits.
+This replaces the sleep(20) guess.
+
+# -----------------------------------#---------------------------------------#------------------
+PROBLEM2:
+
+Prefetch on the partial transcript. We’ll do this once the voice loop (STT) exists, since there’s no partial transcript in a text loop.
+
+EXPLORE: Moss, primed , .... for fast semantic search , ........
+
+#-------------------------------------------------------------------------------------
+
