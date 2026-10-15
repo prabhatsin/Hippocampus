@@ -31,3 +31,4 @@ EXPLORE: Moss, primed , .... for fast semantic search , ........
 
 #-------------------------------------------------------------------------------------
 
+=> System prompt vs instruction and why voice ai have a very big system prompt ?? 

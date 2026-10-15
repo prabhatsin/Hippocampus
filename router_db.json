@@ -15,25 +15,29 @@
         "schema": "health",
         "mem_ids": [
           "14109bc5-adf6-436a-939e-2968ec7a15db"
-        ]
+        ],
+        "desc": "vegetarian diet: User follows a vegetarian diet"
       },
       "bob": {
         "schema": "people",
         "mem_ids": [
           "5c45a04c-aea2-4a8f-b463-976d44150269"
-        ]
+        ],
+        "desc": "bob: User has a manager named Bob and feels that Bob schedules too many meetings"
       },
       "meetings": {
         "schema": "work",
         "mem_ids": [
           "5c45a04c-aea2-4a8f-b463-976d44150269"
-        ]
+        ],
+        "desc": "meetings: User has a manager named Bob and feels that Bob schedules too many meetings"
       },
       "badminton": {
         "schema": "daily_life",
         "mem_ids": [
           "ca667b96-4eec-42d3-9bcb-4f51f502a144"
-        ]
+        ],
+        "desc": "badminton: User plays badminton regularly on weekends"
       }
     }
   },
@@ -43,25 +47,29 @@
         "schema": "people",
         "mem_ids": [
           "2b0ea1b3-bcc6-4a4e-abcf-820f3031c5e5"
-        ]
+        ],
+        "desc": "priya: User has a sister named Priya who lives in Pune"
       },
       "pune": {
         "schema": "daily_life",
         "mem_ids": [
           "2b0ea1b3-bcc6-4a4e-abcf-820f3031c5e5"
-        ]
+        ],
+        "desc": "pune: User has a sister named Priya who lives in Pune"
       },
       "backend developer": {
         "schema": "work",
         "mem_ids": [
           "e3436a1e-679b-467b-8988-615c8666c2e4"
-        ]
+        ],
+        "desc": "backend developer: User works as a backend developer"
       },
       "cricket": {
         "schema": "daily_life",
         "mem_ids": [
           "1b314764-efdb-48c7-9386-9c4996bdff80"
-        ]
+        ],
+        "desc": "cricket: User plays cricket on Sundays"
       }
     }
   },
@@ -71,25 +79,29 @@
         "schema": "people",
         "mem_ids": [
           "d3191cc4-8420-49f2-9257-461423492c33"
-        ]
+        ],
+        "desc": "priya: User has a sister named Priya who lives in Pune"
       },
       "pune": {
         "schema": "daily_life",
         "mem_ids": [
           "d3191cc4-8420-49f2-9257-461423492c33"
-        ]
+        ],
+        "desc": "pune: User has a sister named Priya who lives in Pune"
       },
       "backend developer": {
         "schema": "work",
         "mem_ids": [
           "246e18ce-0f81-4906-8808-42d0414a9411"
-        ]
+        ],
+        "desc": "backend developer: User works as a backend developer"
       },
       "cricket": {
         "schema": "daily_life",
         "mem_ids": [
           "a6065a0d-4c2b-4c28-afd7-3cd826ddf0b3"
-        ]
+        ],
+        "desc": "cricket: User plays cricket on Sundays"
       }
     }
   },
@@ -99,31 +111,36 @@
         "schema": "people",
         "mem_ids": [
           "0cf84428-c777-4eae-a86e-796a8abddaa4"
-        ]
+        ],
+        "desc": "priya: User has a sister named Priya who lives in Pune"
       },
       "pune": {
         "schema": "daily_life",
         "mem_ids": [
           "0cf84428-c777-4eae-a86e-796a8abddaa4"
-        ]
+        ],
+        "desc": "pune: User has a sister named Priya who lives in Pune"
       },
       "backend developer": {
         "schema": "work",
         "mem_ids": [
           "1457de25-7d37-4130-8554-535e9790053d"
-        ]
+        ],
+        "desc": "backend developer: User works as a backend developer"
       },
       "cricket": {
         "schema": "daily_life",
         "mem_ids": [
           "397f155b-7961-41be-acf7-f202a270a9e9"
-        ]
+        ],
+        "desc": "cricket: User plays cricket on Sundays"
       },
       "sunday": {
         "schema": "daily_life",
         "mem_ids": [
           "397f155b-7961-41be-acf7-f202a270a9e9"
-        ]
+        ],
+        "desc": "sunday: User plays cricket on Sundays"
       }
     }
   },
@@ -133,302 +150,352 @@
         "schema": "people",
         "mem_ids": [
           "18810350-b739-40d6-bfe1-4b39a373d88f"
-        ]
+        ],
+        "desc": "bob: User has a manager named Bob and expressed frustration that Bob schedules too many meetings."
       },
       "meetings": {
         "schema": "work",
         "mem_ids": [
           "18810350-b739-40d6-bfe1-4b39a373d88f"
-        ]
+        ],
+        "desc": "meetings: User has a manager named Bob and expressed frustration that Bob schedules too many meetings."
       },
       "priya": {
         "schema": "people",
         "mem_ids": [
           "2ca715bd-3d1d-47f3-8532-c77e1ff3d194"
-        ]
+        ],
+        "desc": "priya: User has a sister named Priya who lives in Pune"
       },
       "pune": {
         "schema": "daily_life",
         "mem_ids": [
           "2ca715bd-3d1d-47f3-8532-c77e1ff3d194"
-        ]
+        ],
+        "desc": "pune: User has a sister named Priya who lives in Pune"
       },
       "rohan": {
         "schema": "people",
         "mem_ids": [
           "0ddfc32c-b2b5-4e64-ab5c-7d79d075595f"
-        ]
+        ],
+        "desc": "rohan: User has a friend named Rohan who works at Google in Bangalore"
       },
       "google": {
         "schema": "work",
         "mem_ids": [
           "0ddfc32c-b2b5-4e64-ab5c-7d79d075595f"
-        ]
+        ],
+        "desc": "google: User has a friend named Rohan who works at Google in Bangalore"
       },
       "bangalore": {
         "schema": "knowledge",
         "mem_ids": [
           "0ddfc32c-b2b5-4e64-ab5c-7d79d075595f"
-        ]
+        ],
+        "desc": "bangalore: User has a friend named Rohan who works at Google in Bangalore"
       },
       "karan": {
         "schema": "people",
         "mem_ids": [
           "c1da6483-2514-4902-84c8-9e366e1ff53b"
-        ]
+        ],
+        "desc": "karan: User has a brother named Karan who is preparing for the UPSC exam as of October 2026"
       },
       "upsc exam": {
         "schema": "goals",
         "mem_ids": [
           "c1da6483-2514-4902-84c8-9e366e1ff53b"
-        ]
+        ],
+        "desc": "upsc exam: User has a brother named Karan who is preparing for the UPSC exam as of October 2026"
       },
       "vegetarian diet": {
         "schema": "health",
         "mem_ids": [
           "d424ea2d-17ae-4240-acd1-660858c48a45"
-        ]
+        ],
+        "desc": "vegetarian diet: User follows a vegetarian diet"
       },
       "peanut allergy": {
         "schema": "health",
         "mem_ids": [
           "e15c0058-8748-43ff-92e9-03e5e78ae806"
-        ]
+        ],
+        "desc": "peanut allergy: User has an allergy to peanuts"
       },
       "badminton": {
         "schema": "daily_life",
         "mem_ids": [
           "48758417-feb2-4a84-973b-498d56a72073"
-        ]
+        ],
+        "desc": "badminton: User plays badminton regularly on Saturdays"
       },
       "saturdays": {
         "schema": "daily_life",
         "mem_ids": [
           "48758417-feb2-4a84-973b-498d56a72073"
-        ]
+        ],
+        "desc": "saturdays: User plays badminton regularly on Saturdays"
       },
       "cricket": {
         "schema": "daily_life",
         "mem_ids": [
           "c4cf2703-576c-4a42-a891-cc0a2e35b27f"
-        ]
+        ],
+        "desc": "cricket: User plays cricket on Sundays as part of their regular weekend routine"
       },
       "sunday": {
         "schema": "daily_life",
         "mem_ids": [
           "c4cf2703-576c-4a42-a891-cc0a2e35b27f"
-        ]
+        ],
+        "desc": "sunday: User plays cricket on Sundays as part of their regular weekend routine"
       },
       "running": {
         "schema": "health",
         "mem_ids": [
           "070f28c6-06b6-4ac0-be0b-b12cf30b23e5"
-        ]
+        ],
+        "desc": "running: User goes running every morning at 6:00 AM as part of their daily routine"
       },
       "morning routine": {
         "schema": "daily_life",
         "mem_ids": [
           "070f28c6-06b6-4ac0-be0b-b12cf30b23e5",
           "c2cea3bd-d760-41cf-a5ee-6725fe905968"
-        ]
+        ],
+        "desc": "morning routine: User goes running every morning at 6:00 AM as part of their daily routine"
       },
       "python backend developer": {
         "schema": "work",
         "mem_ids": [
           "7609f1e4-a22c-4b26-8c14-1206fd28e225"
-        ]
+        ],
+        "desc": "python backend developer: User works professionally as a Python backend developer as of October 2026"
       },
       "python": {
         "schema": "knowledge",
         "mem_ids": [
           "7609f1e4-a22c-4b26-8c14-1206fd28e225"
-        ]
+        ],
+        "desc": "python: User works professionally as a Python backend developer as of October 2026"
       },
       "postgresql": {
         "schema": "work",
         "mem_ids": [
           "0fddbaca-bc74-42e3-8cda-efaafd7b5902"
-        ]
+        ],
+        "desc": "postgresql: User's team uses PostgreSQL and FastAPI for their backend development work as of October 2026"
       },
       "fastapi": {
         "schema": "work",
         "mem_ids": [
           "0fddbaca-bc74-42e3-8cda-efaafd7b5902"
-        ]
+        ],
+        "desc": "fastapi: User's team uses PostgreSQL and FastAPI for their backend development work as of October 2026"
       },
       "zeta": {
         "schema": "work",
         "mem_ids": [
           "c6474495-de45-4de7-8874-72baa36b1ca9"
-        ]
+        ],
+        "desc": "zeta: User has a job interview with a startup called Zeta scheduled for Friday, October 16, 2026, at 11:00 AM"
       },
       "job interview": {
         "schema": "work",
         "mem_ids": [
           "c6474495-de45-4de7-8874-72baa36b1ca9"
-        ]
+        ],
+        "desc": "job interview: User has a job interview with a startup called Zeta scheduled for Friday, October 16, 2026, at 11:00 AM"
       },
       "agentic ai engineer roles": {
         "schema": "goals",
         "mem_ids": [
           "b677c223-6958-4d4c-9713-b172814ff40b"
-        ]
+        ],
+        "desc": "agentic ai engineer roles: User is preparing for agentic AI engineer roles as of October 2026"
       },
       "voice ai agent project": {
         "schema": "goals",
         "mem_ids": [
           "6d5f9b47-a500-4495-952d-c8de1b978718"
-        ]
+        ],
+        "desc": "voice ai agent project: User wants to build a voice AI agent project as of October 2026"
       },
       "ai agent memory systems": {
         "schema": "knowledge",
         "mem_ids": [
           "c1b1927c-9baa-4a87-9ada-f8647249bfd9"
-        ]
+        ],
+        "desc": "ai agent memory systems: User is learning about memory systems for AI agents as of October 2026"
       },
       "black coffee": {
         "schema": "daily_life",
         "mem_ids": [
           "91030129-2648-45d5-a53a-05301bd7955f"
-        ]
+        ],
+        "desc": "black coffee: User drinks black coffee with no sugar"
       },
       "noida": {
         "schema": "daily_life",
         "mem_ids": [
           "2acca7ad-4244-4076-80a7-c28a03840ba8"
-        ]
+        ],
+        "desc": "noida: User lives in Noida as of October 2026"
       },
       "dentist appointment": {
         "schema": "health",
         "mem_ids": [
           "b9da4e77-a7d7-47e4-aa36-e9df0eddeea5"
-        ]
+        ],
+        "desc": "dentist appointment: User has a dentist appointment scheduled for Tuesday, October 20, 2026, at 4:00 PM"
       },
       "thinkpad": {
         "schema": "daily_life",
         "mem_ids": [
           "4408d6ce-a6f2-4156-aaf4-c6a7810e98fa"
-        ]
+        ],
+        "desc": "thinkpad: User's laptop is a ThinkPad running the Ubuntu operating system as of October 2026"
       },
       "ubuntu": {
         "schema": "knowledge",
         "mem_ids": [
           "4408d6ce-a6f2-4156-aaf4-c6a7810e98fa"
-        ]
+        ],
+        "desc": "ubuntu: User's laptop is a ThinkPad running the Ubuntu operating system as of October 2026"
       },
       "wake-up time": {
         "schema": "daily_life",
         "mem_ids": [
           "c2cea3bd-d760-41cf-a5ee-6725fe905968"
-        ]
+        ],
+        "desc": "wake-up time: User wakes up at 5:30 AM daily as part of their morning routine"
       },
       "sunita": {
         "schema": "people",
         "mem_ids": [
           "62a6d9cf-2a82-4c9a-89ca-977a76ff14e0"
-        ]
+        ],
+        "desc": "sunita: User has a mother named Sunita who calls User every evening"
       },
       "evening phone calls": {
         "schema": "daily_life",
         "mem_ids": [
           "62a6d9cf-2a82-4c9a-89ca-977a76ff14e0"
-        ]
+        ],
+        "desc": "evening phone calls: User has a mother named Sunita who calls User every evening"
       },
       "motorcycle purchase": {
         "schema": "goals",
         "mem_ids": [
           "be461d37-42c2-4964-973e-299fd38a0a01"
-        ]
+        ],
+        "desc": "motorcycle purchase: User is currently saving money with the goal of purchasing a motorcycle as of October 2026"
       },
       "saving money": {
         "schema": "daily_life",
         "mem_ids": [
           "be461d37-42c2-4964-973e-299fd38a0a01"
-        ]
+        ],
+        "desc": "saving money: User is currently saving money with the goal of purchasing a motorcycle as of October 2026"
       },
       "formula 1": {
         "schema": "daily_life",
         "mem_ids": [
           "3b0d96b0-406b-42b4-83a9-edd0a5ef0505"
-        ]
+        ],
+        "desc": "formula 1: User loves watching Formula 1 races"
       },
       "science fiction novels": {
         "schema": "knowledge",
         "mem_ids": [
           "3bfe10e6-95a7-47f1-9449-5b49f98511d3"
-        ]
+        ],
+        "desc": "science fiction novels: User reads science fiction novels before going to bed as part of their nightly routine"
       },
       "nightly routine": {
         "schema": "daily_life",
         "mem_ids": [
           "3bfe10e6-95a7-47f1-9449-5b49f98511d3"
-        ]
+        ],
+        "desc": "nightly routine: User reads science fiction novels before going to bed as part of their nightly routine"
       },
       "neha": {
         "schema": "people",
         "mem_ids": [
           "80842623-69f3-4b65-b8c4-882dcc311572"
-        ]
+        ],
+        "desc": "neha: User has a colleague named Neha who is leading the migration project as of October 2026"
       },
       "migration project": {
         "schema": "work",
         "mem_ids": [
           "80842623-69f3-4b65-b8c4-882dcc311572"
-        ]
+        ],
+        "desc": "migration project: User has a colleague named Neha who is leading the migration project as of October 2026"
       },
       "monday standup": {
         "schema": "work",
         "mem_ids": [
           "78e293eb-d9b8-4c83-9f25-c1aa9fca1e8a"
-        ]
+        ],
+        "desc": "monday standup: User dislikes Monday standup meetings"
       },
       "yoga": {
         "schema": "health",
         "mem_ids": [
           "98c3e553-400e-4530-864a-b2b892e1c768"
-        ]
+        ],
+        "desc": "yoga: User does yoga on Wednesdays as part of their regular weekly routine"
       },
       "wednesdays": {
         "schema": "daily_life",
         "mem_ids": [
           "98c3e553-400e-4530-864a-b2b892e1c768"
-        ]
+        ],
+        "desc": "wednesdays: User does yoga on Wednesdays as part of their regular weekly routine"
       },
       "weekly routine": {
         "schema": "daily_life",
         "mem_ids": [
           "98c3e553-400e-4530-864a-b2b892e1c768"
-        ]
+        ],
+        "desc": "weekly routine: User does yoga on Wednesdays as part of their regular weekly routine"
       },
       "south indian food": {
         "schema": "daily_life",
         "mem_ids": [
           "3963d921-1213-4ac7-a7d5-af3958b9bfbb"
-        ]
+        ],
+        "desc": "south indian food: User's favorite cuisine is South Indian food"
       },
       "remote job switch": {
         "schema": "goals",
         "mem_ids": [
           "3dfffcdb-a7b8-4bee-8411-02aa7cd30c75"
-        ]
+        ],
+        "desc": "remote job switch: User wants to switch to a remote job as of October 2026"
       },
       "remote work": {
         "schema": "work",
         "mem_ids": [
           "3dfffcdb-a7b8-4bee-8411-02aa7cd30c75"
-        ]
+        ],
+        "desc": "remote work: User wants to switch to a remote job as of October 2026"
       },
       "trip to goa": {
         "schema": "goals",
         "mem_ids": [
           "492f9ac1-80b7-4664-a271-1f67bcfff4c3"
-        ]
+        ],
+        "desc": "trip to goa: User is planning a trip to Goa in December 2026"
       },
       "goa": {
         "schema": "daily_life",
         "mem_ids": [
           "492f9ac1-80b7-4664-a271-1f67bcfff4c3"
-        ]
+        ],
+        "desc": "goa: User is planning a trip to Goa in December 2026"
       }
     }
   }

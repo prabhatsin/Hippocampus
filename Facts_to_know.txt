@@ -1,0 +1,11 @@
+
+=>FastEmbed is a lightweight, high-performance library developed by Qdrant that generates vector 
+embeddings using the ONNX runtime without heavy PyTorch or GPU dependencies
+
+=>MTEB : Massive Text Embedding Benchmark. It’s a standard test suite that scores how good text 
+embedding models are, so you can compare them on the same tasks.
+
+=> Gamma 4 architecture , 
+Embedding gemma 2
+
+=>

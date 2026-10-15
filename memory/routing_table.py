@@ -11,15 +11,17 @@ class RoutingTable:
         self.data = {}
         self.load()
 
-    def add(self, user_id, memory_id, entities):
+    def add(self, user_id, memory_id, entities, memory_text=""):
         u = self.data.setdefault(user_id, {"entities": {}})
         for e in entities:
             name = e["entity"].strip().lower()
-            e_rec = u["entities"].setdefault(
-                name, {"schema": e["schema"], "mem_ids": []}
+            rec = u["entities"].setdefault(
+                name, {"schema": e["schema"], "mem_ids": [], "desc": ""}
             )
-            if memory_id not in e_rec["mem_ids"]:
-                e_rec["mem_ids"].append(memory_id)
+            if memory_id not in rec["mem_ids"]:
+                rec["mem_ids"].append(memory_id)
+            if memory_text and not rec.get("desc"):
+                rec["desc"] = f"{name}: {memory_text}"
         self.save()
 
     def save(self):

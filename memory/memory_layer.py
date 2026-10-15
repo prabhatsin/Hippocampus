@@ -15,6 +15,43 @@ from memory.routing_table import RoutingTable
 
 table = RoutingTable()
 
+entity_vecs = {}   # {(user_id, entity_name): numpy vector}
+
+def ensure_entity_vecs(user_id):
+    ents = table.data.get(user_id, {}).get("entities", {})
+    for name, rec in ents.items():
+        key = (user_id, name)
+        if key not in entity_vecs and rec.get("desc"):
+            entity_vecs[key] = np.array(m.embedding_model.embed(rec["desc"], "add"))
+
+def build_entity_cache():
+    start = time.time()
+    for uid in table.data:
+        ensure_entity_vecs(uid)
+    print(f"[router] cached {len(entity_vecs)} entity vectors in {time.time() - start:.1f} s")
+
+def lookup_semantic(user_id, query, top_n=3, floor=0.55, margin=0.08, expand=True):
+    qv = np.array(m.embedding_model.embed(query, "search"))
+    scored = []
+    for (u, name), v in entity_vecs.items():
+        if u == user_id:
+            s = float(v @ qv / (np.linalg.norm(v) * np.linalg.norm(qv)))
+            scored.append((s, name))
+    scored.sort(reverse=True)
+    if not scored or scored[0][0] < floor:
+        return [], []
+
+    best = scored[0][0]
+    matched = [n for s, n in scored[:top_n] if s >= best - margin]
+
+    ents = table.data[user_id]["entities"]
+    names = set(matched)
+    if expand:
+        schemas = {ents[n]["schema"] for n in matched}
+        names |= {n for n, rec in ents.items() if rec["schema"] in schemas}
+    pool_ids = list({i for n in names for i in ents[n]["mem_ids"]})
+    return matched, pool_ids
+
 
 config = {
     "llm": {
@@ -65,7 +102,8 @@ def _save(user_id, user_msg, assistant_msg):
         if item.get("event") in ("ADD", "UPDATE"):
             try:
                 entities = extract_entities(item["memory"])
-                table.add(user_id, item["id"], entities)
+                table.add(user_id, item["id"], entities, item["memory"])
+                ensure_entity_vecs(user_id)
             except Exception as e:
                 print(f"[router] tagging failed: {e}")
     print(f"[save] tagging took {time.time() - t1:.1f} s")
@@ -111,6 +149,7 @@ def warmup():
     print(f"[memory] warmup done in {(time.time() - start):.1f} s")
 
 warmup()
+build_entity_cache()
 
 def _close():
     try:
@@ -124,7 +163,8 @@ atexit.register(_close)
 
 def get_memories_routed(user_id, query, k=5, fill=True):
     start = time.time()
-    matched, pool_ids = table.lookup(user_id, query)
+    # matched, pool_ids = table.lookup(user_id, query)
+    matched, pool_ids = lookup_semantic(user_id, query)
 
     if not pool_ids:
         print("[router] no match -> full search")
